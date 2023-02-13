@@ -95,6 +95,7 @@
   }
   header .navbar{
     gap: 5px;
+    display: block;
   }
   header .navbar a{
     font-size: 1.7rem;
