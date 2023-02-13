@@ -96,6 +96,7 @@
   header .navbar{
     gap: 5px;
     display: block;
+    text-align: center;
   }
   header .navbar a{
     font-size: 1.7rem;
@@ -197,7 +198,7 @@
   .home .home-slider .slide .content{
     flex:1 1 45rem; 
     margin-top: 5rem;
-    text-align: center;
+     
   }
   .home .home-slider .slide .images{
     flex:1 1 45rem;  
@@ -478,8 +479,7 @@
     margin-left: 1rem;
     font-size: 2.5rem;
   }
-
-  /* //////////////////////////////// */
+ 
   /* review */
   .review .slide{
     padding: 2rem;
@@ -605,6 +605,30 @@
     color: var(--green);
   }
 
+  /* load */
+  .loader-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .loader-container img{
+    width: 35rem;
+  }
+  .loader-container.fade-out{
+    top: 110%;
+    opacity: 0;
+  }
+
+ 
+ 
 
   
   

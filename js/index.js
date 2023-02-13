@@ -16,7 +16,7 @@ window.onscroll = () =>{
     section.forEach(sec =>{
         let top = window.scrollY;
         let height = sec.offsetHeight;
-        let offset = sec.offsetTop - 120;
+        let offset = sec.offsetTop - 150;
         let id = sec.getAttribute('id');
 
         if(top => offset && top < offset + height){
@@ -75,3 +75,12 @@ var swiper = new Swiper(".review-slider", {
         },
      },
   });
+
+  function loader(){
+    document.querySelector('.loader-container').classList.add('fade-out');
+  };
+  function fadeOut(){
+    setInterval(loader, 3000);
+  };
+
+  window.onload = fadeOut;
